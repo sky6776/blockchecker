@@ -1,12 +1,12 @@
 * {
     box-sizing: border-box;
   }
-
+  
 body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  padding-top: 300px;
+  padding-top: 130px;
 }
 
 header {
@@ -129,20 +129,6 @@ input[type="checkbox"]:checked::after {
   opacity: 1;
 }
 
-.button-001 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  margin:0 auto;
-  padding: .9em 2em;
-  border: 1px solid #2589d0;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #2589d0;
-  font-size: 1em;
-}
-
 .site-footer {
 background: rgb(255, 255, 255);
   padding: 10px 0;
@@ -158,72 +144,4 @@ background: rgb(255, 255, 255);
 .last {
   color: rgb(0, 0, 0);
   font-size: 12px;
-}
-
-/* styles.css */
-.selectbox-002 {
-  position: relative;
-}
-
-.selectbox-002::before,
-.selectbox-002::after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-
-.selectbox-002::before {
-  right: 0;
-  display: inline-block;
-  width: 2.8em;
-  height: 2.8em;
-  border-radius: 0 3px 3px 0;
-  background-color: #2589d0;
-  content: '';
-}
-
-.selectbox-002::after {
-  position: absolute;
-  top: 50%;
-  right: 1.4em;
-  transform: translate(50%, -50%) rotate(45deg);
-  width: 6px;
-  height: 6px;
-  border-bottom: 3px solid #fff;
-  border-right: 3px solid #fff;
-  content: '';
-}
-
-.selectbox-002 select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  min-width: 230px;
-  height: 2.8em;
-  padding: .4em 3.6em .4em .8em;
-  border: 2px solid #2589d0;
-  border-radius: 3px;
-  color: #333333;
-  font-size: 1em;
-  cursor: pointer;
-}
-
-.selectbox-002 select:focus {
-  outline: 1px solid #2589d0;
-}
-
-.display-text p {
-  display: none;
-}
-
-.none {
-  display: block;
-}
-
-#select-box option[value="chest"]:checked + .display-text .chest {
-  display: block;
-}
-
-#select-box option[value="Rchest"]:checked + .display-text .Rchest {
-  display: block;
 }
