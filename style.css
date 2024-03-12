@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+  }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  padding-top: 300px;
+}
+
+header {
+  padding: 10px 4% 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.10);
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+nav {
+  margin: 0 0 0 auto;
+}
+  
+ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  font-family: "ヒラギノ角ゴ Pro W3";
+}
+
+#form1 {
+  text-align: center;
+}
+
+#search-container {
+  position: relative;
+  max-width: 270px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+#sbox {
+  outline: 0;
+  height: 50px;
+  padding: 0 10px;
+  border-radius: 2px 0 0 2px;
+  background: #eee;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sbtn {
+  width: 70px;
+  height: 50px;
+  border-radius: 0 2px 2px 0;
+  background: #7fbfff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#sbtn:hover {
+  color: #666;
+}
+
+input[type="checkbox"]  {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+    padding-left: 30px;
+    vertical-align: middle;
+    position: relative;
+}
+
+input[type="checkbox"]::before,
+input[type="checkbox"]::after {
+  content: "";
+  display: block; 
+  position: absolute;
+}
+
+input[type="checkbox"]::before {
+  background-color: #fff;
+  border-radius: 0%;
+  border: 1px solid #666464;
+  width: 20px;
+  height: 20px;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 5px;
+}
+
+input[type="checkbox"]::after {
+  border-bottom: 3px solid #666464;
+  border-left: 3px solid #666464;
+  opacity: 0;
+  height: 6px;
+  width: 11px;
+  transform: rotate(-45deg);
+  top: -7px;
+  left: 10px;
+}
+
+input[type="checkbox"]:checked::after {
+  opacity: 1;
+}
+
+.button-001 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin:0 auto;
+  padding: .9em 2em;
+  border: 1px solid #2589d0;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #2589d0;
+  font-size: 1em;
+}
+
+.site-footer {
+background: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+  
+.copyright {
+  font-family: Terminal;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  text-align: center;
+}
+
+.last {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+}
+
+/* styles.css */
+.selectbox-002 {
+  position: relative;
+}
+
+.selectbox-002::before,
+.selectbox-002::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.selectbox-002::before {
+  right: 0;
+  display: inline-block;
+  width: 2.8em;
+  height: 2.8em;
+  border-radius: 0 3px 3px 0;
+  background-color: #2589d0;
+  content: '';
+}
+
+.selectbox-002::after {
+  position: absolute;
+  top: 50%;
+  right: 1.4em;
+  transform: translate(50%, -50%) rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border-bottom: 3px solid #fff;
+  border-right: 3px solid #fff;
+  content: '';
+}
+
+.selectbox-002 select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  min-width: 230px;
+  height: 2.8em;
+  padding: .4em 3.6em .4em .8em;
+  border: 2px solid #2589d0;
+  border-radius: 3px;
+  color: #333333;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.selectbox-002 select:focus {
+  outline: 1px solid #2589d0;
+}
+
+.display-text p {
+  display: none;
+}
+
+.none {
+  display: block;
+}
+
+#select-box option[value="chest"]:checked + .display-text .chest {
+  display: block;
+}
+
+#select-box option[value="Rchest"]:checked + .display-text .Rchest {
+  display: block;
+}
